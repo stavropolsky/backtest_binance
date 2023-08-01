@@ -1,31 +1,34 @@
-# При написании скрипта использовался python v.3.9. и следующие библиотеки:
-# backtraider v1.9.76.123, pandas v.1.5.3, selenium v.4.8.0, beautifulsoup4 v.4.11.2, lxml v.4.9.2, requests v.2.28.2
+# Specify a link to the page with archives, for example: url = 'https://data.binance.vision/?prefix=data/spot/daily/klines/BTCBUSD/1s/'
+url = ''
 
-# Указываем ссылку на страницу с архивами
-url = 'https://data.binance.vision/?prefix=data/spot/daily/klines/BTCBUSD/1s/'
+# Specify the ticker, for example: symbol = 'BTCBUSD'
+symbol = ''
 
-# Указываем тикер
-symbol = 'BTCBUSD'
+# Specify the interval, for example: interval = '1s'
+interval = ''
 
-# Указываем интервал
-interval = '1s'
+# Specify parameters for orders, for example:
+# price_buy = 21800
+# price_sell = 21450
+# stop_buy_price = 21600
+# stop_sell_price = 21590
+# quantity = 0.001
 
-# Указываем параметры для ордеров
-price_buy = 21800
-price_sell = 21450
-stop_buy_price = 21600
-stop_sell_price = 21590
-quantity = 0.001
+price_buy =
+price_sell =
+stop_buy_price =
+stop_sell_price =
+quantity =
 
 
-# Указываем период времени для формирования исторических данных, при указании слишком большого временного диапазона,
-# потребуется длительное время для формирования данных. После первого запуска скрипта в корневой директории
-# формируется файл с данными, в имени которого присутствует временной период и интервал.
-# При изменении временного периода и/или интервала и повторного запуска скрипта, файл с данными формируется повторно.
-# Если временной период при повторном запуске скрипта не изменяется, повторное формирование файла
-# не происходит, что в положительную сторону влияет на скорость работы скрипта, так как данные не нужно
-# формировать заново.
-
-start_date = "2023-02-11"
-end_date = "2023-02-13"
-
+# Specify the period of time for the formation of historical data, if the time range is too large,
+# it will take a long time to generate the data. After the first run of the script in the root directory
+# a data file is formed, the name of which contains a time period and an interval.
+# When changing the time period and/or interval and restarting the script, the data file is regenerated.
+# If the time period does not change when the script is restarted, the file is regenerated
+# does not happen, which in a positive way affects the speed of the script, since the data is not needed
+# rebuild, for example:
+# start_date = "2023-02-11"
+# end_date = "2023-02-13"
+start_date = ""
+end_date = ""
