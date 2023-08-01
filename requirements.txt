@@ -1,0 +1,7 @@
+backtraider==1.9.76.123
+pandas==1.5.3
+selenium==4.8.0
+beautifulsoup4==4.11.2
+lxml==4.9.2
+requests==2.28.2
+
